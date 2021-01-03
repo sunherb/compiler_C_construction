@@ -115,10 +115,7 @@ string char_to_str(char c)
 //是否为运算操作符
 int is_operator(char c)
 {
-	if(c == '+' || c=='-'||c=='*'||c=='/'||c==','||c=='=' ||c=='>' || c=='<')
-		return 1;
-	else
-		return 0;
+	
 }
 
 //是否为大括号、小括号、分号
@@ -858,6 +855,7 @@ int main(int argc,char* argv[])
 	    syntax_analysis(AnalysisResults);
 		//生成汇编文件
 	    create_asm(asmfile(source));
+		
 		cout<<"\n使用结束"<<endl;
 	}
 	else if(argc == 2)
